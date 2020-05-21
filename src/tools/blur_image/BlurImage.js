@@ -36,7 +36,7 @@ const BlurImage = () => {
                 onChange={fileSelected}
             />
             <br/>
-            <ShowImageAndSlider
+            <ShowImageAndInput
                 imageSelected={imageSelected}
                 fileInputRef={fileInput}
             />
@@ -44,7 +44,7 @@ const BlurImage = () => {
     )
 };
 
-const ShowImageAndSlider = ({imageSelected, fileInputRef}) => {
+const ShowImageAndInput = ({imageSelected, fileInputRef}) => {
     const [blurPercentage, setBlurPercentage] = useState(0);
 
     if (imageSelected) {
